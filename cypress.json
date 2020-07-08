@@ -1,0 +1,12 @@
+{
+  "fixturesFolder": false,
+  "pluginsFile": false,
+  "supportFile": false,
+  "viewportWidth": 2000,
+  "viewportHeight": 1260,
+
+  "env": {
+    "url": "https://demo.airmeet.com/e/d385eb90-c113-11ea-8237-d5be3827fbc0"
+  }
+
+}
