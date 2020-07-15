@@ -10,5 +10,10 @@
   },
   "dependencies": {
     "cypress": "^4.9.0"
+  },
+  "devDependencies": {
+    "cypress-commands": "^1.1.0",
+    "cypress-file-upload": "^4.0.7",
+    "cypress-localstorage-commands": "^1.2.1"
   }
 }
