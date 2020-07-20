@@ -6,10 +6,11 @@
   "fixturesFolder": "cypress/fixtures",
   "viewportHeight": 1260,
   "video": true,
-  "baseUrl" : "https://demo.airmeet.com/e/06614960-c5ab-11ea-8955-fb596d4f533c",
+  "baseUrl" : "https://demo.airmeet.com",
   "env": {
     "url": "https://demo.airmeet.com/e/06614960-c5ab-11ea-8955-fb596d4f533c",
-    "edit_airmeet" : "https://demo.airmeet.com/airmeets/751da030-c4d7-11ea-8c5a-cbd79ed81f85/summary"
+    "edit_airmeet" : "https://demo.airmeet.com/airmeets/db135d10-c664-11ea-bd87-49fcd2b426fa/summary",
+    "baseUrl" : "https://demo.airmeet.com"
   },
 "animationDistanceThreshold": 5,
   "baseUrl": null,

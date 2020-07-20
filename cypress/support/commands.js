@@ -29,7 +29,7 @@ import "cypress-commands";
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 
-Cypress.Commands.add('loginAs', (UserEmail, UserPwd) => {
+/*Cypress.Commands.add('loginAs', (UserEmail, UserPwd) => {
     cy.request({
         method: 'POST',
         url: "/loginWithToken",
@@ -45,8 +45,9 @@ Cypress.Commands.add('loginAs', (UserEmail, UserPwd) => {
             cy.setLocalStorage("accessToken", body.accessToken);
             cy.setLocalStorage("refreshToken", body.refreshToken);
         });
-})
+})*/
 
+/*
 beforeEach(() => {
     // before each test, we can automatically preserve the
     // 'session_id' and 'remember_token' cookies. this means they
@@ -56,7 +57,7 @@ beforeEach(() => {
     // this is an example
     //Cypress.Cookies.preserveOnce('session_id', 'remember_token')
 
-    Cypress.Cookies.defaults({
+   /!* Cypress.Cookies.defaults({
         whitelist: 'session_id'
     })
 
@@ -68,5 +69,26 @@ beforeEach(() => {
             return clear.apply(this, arguments)
         }
 
-    }
-})
+    }*!/
+
+    //Cypress.Cookies.preserveOnce();
+})*/
+
+let LOCAL_STORAGE_MEMORY = {};
+
+Cypress.Commands.add("saveLocalStorageCache", () => {
+    Object.keys(localStorage).forEach(key => {
+        LOCAL_STORAGE_MEMORY[key] = localStorage[key];
+    });
+});
+
+Cypress.Commands.add("restoreLocalStorageCache", () => {
+    Object.keys(LOCAL_STORAGE_MEMORY).forEach(key => {
+        localStorage.setItem(key, LOCAL_STORAGE_MEMORY[key]);
+    });
+});
+
+Cypress.Commands.add("clearLocalStorageCache", () => {
+    localStorage.clear();
+    LOCAL_STORAGE_MEMORY = {};
+});
