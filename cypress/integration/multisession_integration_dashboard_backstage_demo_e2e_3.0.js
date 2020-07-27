@@ -629,29 +629,73 @@ describe('integration_dashboard_backstage_e2e', () => {
         })
 
 
+        //Screen sharing
         cy.get('#session-broadcast-control-buttons > :nth-child(4) > .i-holder > .icon > use').should("be.visible").then(($btn) => {
             cy.get('#session-broadcast-control-buttons > :nth-child(4) > .i-holder > .icon > use').click({force: true})
-            cy.get('#session-broadcast-control-buttons > :nth-child(4) > .i-holder > .icon > use').click({force: true})
+            //cy.get('#session-broadcast-control-buttons > :nth-child(4) > .i-holder > .icon > use').click({force: true})
+        })
+
+
+        cy.get('.inner > .i-holder > .icon-c > use').should("be.visible").click().then(($btn) => {
+            cy.get('.item-smile > span').click()
+            cy.get('.item-thumb > span').click()
+            cy.get('.item-clap > span').click()
+            cy.get('.item-like > span').click()
+            cy.get('.item-insightfull > span').click()
+            cy.get('.item-thankyou > span').click()
+
         })
 
         //smiley
-        cy.get('.inner > .i-holder > .icon-c > use').should("be.visible").then(($btn) => {
+        /*cy.get('.inner > .i-holder > .icon-c > use').should("be.visible").then(($btn) => {
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            //cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
+            cy.get('.item-smile > span').click()
+            cy.wait(1000)
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            cy.get('.item-smile > span').click()
+            cy.wait(1000)
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            cy.get('.item-thumb > span').click()
+            cy.wait(1000)
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            cy.get('.item-clap > span').click()
+            cy.wait(1000)
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            cy.get('.item-like > span').click()
+            cy.wait(1000)
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            cy.get('.item-insightfull > span').click()
+            cy.wait(1000)
+            cy.get('.inner > .i-holder > .icon-c > use').click()
+            cy.get('.item-thankyou > span').click()
+            cy.wait(1000)
+        })*/
+        //smiley
+      /*  cy.get('.inner > .i-holder > .icon-c > use').should("be.visible").then(($btn) => {
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             //cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-smile > span').click({force: true})
+            cy.wait(1000)
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-smile > span').click({force: true})
+            cy.wait(1000)
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-thumb > span').click({force: true})
+            cy.wait(1000)
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-clap > span').click({force: true})
+            cy.wait(1000)
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-like > span').click({force: true})
+            cy.wait(1000)
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-insightfull > span').click({force: true})
+            cy.wait(1000)
             cy.get('.inner > .i-holder > .icon-c > use').click({force: true})
             cy.get('.item-thankyou > span').click({force: true})
-        })
+            cy.wait(1000)
+        })*/
 
 
         //Yes/No
@@ -693,7 +737,8 @@ describe('integration_dashboard_backstage_e2e', () => {
             //mic
             cy.get(':nth-child(2) > .i-holder > .icon > use').should("be.visible").then(($btn) => {
                 cy.get(':nth-child(1) > .i-holder > .icon > use').should("be.visible")
-                //cy.get(':nth-child(2) > .i-holder > .icon > use').click({force: true})
+               // Check mic is disabled
+
 
             })
             cy.get('[title="End Session"]').should("be.visible").then(($btn) => {
@@ -702,12 +747,6 @@ describe('integration_dashboard_backstage_e2e', () => {
                 cy.wait(6000)
             })
 
-            //mic
-            cy.get(':nth-child(2) > .i-holder > .icon > use').should("be.visible").then(($btn) => {
-                cy.get(':nth-child(1) > .i-holder > .icon > use').should("be.visible")
-                //cy.get(':nth-child(2) > .i-holder > .icon > use').click({force: true})
-
-            })
 
         //Post end Session
 
