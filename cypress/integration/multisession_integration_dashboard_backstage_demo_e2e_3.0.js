@@ -16,8 +16,8 @@ describe('integration_dashboard_backstage_e2e', () => {
     it('Go to Airmeet and register single Session event', () => {
 
 
-        cy.visit(Cypress.env('demo.url'));
         //cy.visit('https://www.airmeet.com/community-manager/ab8b8769-69f3-4a7e-ba5e-1d45c8929334')
+        cy.visit(Cypress.env('demo.url'));
         //cy.title('Airmeet: Testing_Security')
 
         //login

@@ -8,6 +8,8 @@
   "video": true,
   "baseUrl" : "https://demo.airmeet.com",
   "env": {
+    "demo.url": "https://demo.airmeet.com/community-manager/4236b770-e72f-4377-a7aa-1320deff9314",
+    "prod.url": "https://www.airmeet.com/community-manager/ab8b8769-69f3-4a7e-ba5e-1d45c8929334",
     "url": "https://demo.airmeet.com/e/06614960-c5ab-11ea-8955-fb596d4f533c",
     "edit_airmeet" : "https://demo.airmeet.com/airmeets/db135d10-c664-11ea-bd87-49fcd2b426fa/summary",
     "baseUrl" : "https://demo.airmeet.com"
