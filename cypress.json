@@ -35,6 +35,6 @@
   "videoUploadOnPasses": true,
   "videosFolder": "cypress/videos",
   "waitForAnimations": true,
-  "watchForFileChanges": true
+  "watchForFileChanges": false
 
 }
