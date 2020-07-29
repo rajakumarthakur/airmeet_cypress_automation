@@ -13,7 +13,7 @@ Cypress
 Any editor
 Browser installed
 
-###For the covered automation case please refer 'Automation Scope' Tab for the given link
+###For the covered automation case, please refer 'Automation Scope' Tab from the given link
 https://docs.google.com/spreadsheets/d/1ko_IAb67QHY0arpU-Fyiko21ajmBfjr_13icQKJyUz8/edit?pli=1#gid=1526836734
 
 **Overall status**
