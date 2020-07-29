@@ -1,3 +1,13 @@
+Cypress Framework which have support of below utilities
+Fixture
+X-path
+Session Storage
+Rest API Calls
+Dynamic Environment
+Video recording 
+Screen Recording
+
+
 For the covered automation case please refer 'Automation Scope' Tab for the given link
 https://docs.google.com/spreadsheets/d/1ko_IAb67QHY0arpU-Fyiko21ajmBfjr_13icQKJyUz8/edit?pli=1#gid=1526836734
 
