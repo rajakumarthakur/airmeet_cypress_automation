@@ -702,14 +702,7 @@ describe('integration_dashboard_backstage_e2e', () => {
                 cy.wait(6000)
             })
 
-            //mic
-            cy.get(':nth-child(2) > .i-holder > .icon > use').should("be.visible").then(($btn) => {
-                cy.get(':nth-child(1) > .i-holder > .icon > use').should("be.visible")
-                //cy.get(':nth-child(2) > .i-holder > .icon > use').click({force: true})
-
-            })
-
-        //Post end Session
+             //Post end Session
 
             //Session option
             cy.get('.tn-sessions > .i-holder').should("be.visible").then(($btn) => {
